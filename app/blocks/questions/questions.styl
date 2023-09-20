@@ -7,37 +7,49 @@
         position relative
         padding-top w(40)
         width w(900)
-        height 100vh
         margin 0 auto
+        z-index 1
         +below(1200px)
             width 100%
-            padding wm(40) wm(45)
+        +below(720px)
+            padding-top 10%
 
     &__bg
         position absolute
-        top w(50px)
-        left 0
-        width 100%
+        top w(60px)
+        left 15%
+        width 63vw
         img
             width 100%
 
         +below(1200px)
-            top wm(50px)
+            width 87vw
+            left 5%
+            top wm(35px)
+        +below(720px)
+            left 0
+            width 100vw
+            top wm(105px)
 
     &__title,
     &__variants
         position relative
-        z-index 1
+
+    &__title
+        +below(1200px)
+            padding wm(20) wm(45)
+        +below(720px)
+            padding 0 wm(45)
 
     &__title-number
         color $c-yellow
         text-align center
         font-family Bebas Neue
-        font-size w(88)
+        font-size w(55)
         font-weight 700
         text-transform uppercase
         +below(1200px)
-            font-size wm(24)
+            font-size wm(20)
 
     &__title-text
         color $c-white
@@ -47,34 +59,47 @@
         font-weight 700
         line-height 1.5
         text-transform uppercase
-        padding-top w(8)
+        padding-top w(10)
         +below(1200px)
             font-size wm(10)
+        +below(720px)
+            padding-top 5%
+
+    &__variants
+        +below(1200px)
+            padding 0 wm(25)
 
     &__answer
         display flex
         align-items flex-end
         cursor pointer
-        padding-top w(10)
+        padding-top w(25)
+        +below(720px)
+            padding-top wm(10)
         &:first-child
             padding-top w(77)
+            +below(1200px)
+                padding-top wm(15)
+            +below(720px)
+                padding-top 15%
+
         span
             color $c-yellow
             font-family Bebas Neue
-            font-size w(88)
+            font-size w(55)
             font-weight 700
             text-transform uppercase
             +below(1200px)
-                font-size wm(22)
+                font-size wm(20)
 
     &__answer-text
         color $c-white
         font-family Futura PT
-        font-size w(48)
+        font-size w(40)
         font-weight 700
         line-height normal
         text-transform uppercase
-        padding-left w(10)
+        padding-left w(25)
         +below(1200px)
             font-size wm(12)
             padding-left wm(10)
