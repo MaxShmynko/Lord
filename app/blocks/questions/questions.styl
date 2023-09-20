@@ -11,7 +11,7 @@
         margin 0 auto
         +below(1200px)
             width 100%
-            padding w(40) w(100)
+            padding wm(40) wm(45)
 
     &__bg
         position absolute
@@ -20,6 +20,9 @@
         width 100%
         img
             width 100%
+
+        +below(1200px)
+            top wm(50px)
 
     &__title,
     &__variants
@@ -30,42 +33,51 @@
         color $c-yellow
         text-align center
         font-family Bebas Neue
-        font-size w(44)
+        font-size w(88)
         font-weight 700
         text-transform uppercase
+        +below(1200px)
+            font-size wm(24)
 
     &__title-text
         color $c-white
         text-align center
         font-family Futura PT
-        font-size w(20)
+        font-size w(40)
         font-weight 700
         line-height 1.5
         text-transform uppercase
         padding-top w(8)
-
-    &__variants
-        padding-top w(77)
+        +below(1200px)
+            font-size wm(10)
 
     &__answer
         display flex
         align-items flex-end
         cursor pointer
+        padding-top w(10)
+        &:first-child
+            padding-top w(77)
         span
             color $c-yellow
             font-family Bebas Neue
-            font-size w(44)
+            font-size w(88)
             font-weight 700
             text-transform uppercase
+            +below(1200px)
+                font-size wm(22)
 
     &__answer-text
         color $c-white
         font-family Futura PT
-        font-size w(24)
+        font-size w(48)
         font-weight 700
         line-height normal
         text-transform uppercase
         padding-left w(10)
+        +below(1200px)
+            font-size wm(12)
+            padding-left wm(10)
 
 
 
