@@ -1,0 +1,72 @@
+.questions
+    position relative
+    background-color $c-blue
+    height 100vh
+
+    &__wrap
+        position relative
+        padding-top w(40)
+        width w(900)
+        height 100vh
+        margin 0 auto
+        +below(1200px)
+            width 100%
+            padding w(40) w(100)
+
+    &__bg
+        position absolute
+        top w(50px)
+        left 0
+        width 100%
+        img
+            width 100%
+
+    &__title,
+    &__variants
+        position relative
+        z-index 1
+
+    &__title-number
+        color $c-yellow
+        text-align center
+        font-family Bebas Neue
+        font-size w(44)
+        font-weight 700
+        text-transform uppercase
+
+    &__title-text
+        color $c-white
+        text-align center
+        font-family Futura PT
+        font-size w(20)
+        font-weight 700
+        line-height 1.5
+        text-transform uppercase
+        padding-top w(8)
+
+    &__variants
+        padding-top w(77)
+
+    &__answer
+        display flex
+        align-items flex-end
+        cursor pointer
+        span
+            color $c-yellow
+            font-family Bebas Neue
+            font-size w(44)
+            font-weight 700
+            text-transform uppercase
+
+    &__answer-text
+        color $c-white
+        font-family Futura PT
+        font-size w(24)
+        font-weight 700
+        line-height normal
+        text-transform uppercase
+        padding-left w(10)
+
+
+
+    
