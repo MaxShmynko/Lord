@@ -22,11 +22,11 @@
         font-weight 700
         line-height 1.5
         text-transform uppercase
-        padding w(8) w(170) 0 w(170)
+        padding w(8) w(90) 0 w(90)
         color $c-white
         +below(1200px)
             font-size wm(20)
-            padding wm(8) wm(90) 0 wm(90)
+            padding wm(8) wm(60) 0 wm(60)
         +below(720px)
             font-size wm(28)
             padding wm(20) 0 0 0
@@ -35,7 +35,7 @@
         color $c-yellow
         text-align center
         font-family $ff-BebasNeue
-        font-size w(40)
+        font-size w(30)
         font-weight 700
         text-transform uppercase
         +below(1200px)
@@ -49,10 +49,17 @@
         display flex
         flex-flow column
         justify-content flex-start
+        margin-top w(25)
+        +below(1200px)
+            margin-top wm(45)
     
     &__item
         cursor pointer
-    
+        margin-top w(8)
+        +below(1200px)
+            margin-top wm(8)
+        +below(720px)
+            margin-top wm(51)
     &__sign
         position relative
         display flex
@@ -63,11 +70,11 @@
         span
             color $c-yellow
             font-family $ff-BebasNeue
-            font-size w(40)
+            font-size w(20)
             font-weight 700
             text-transform uppercase
             +below(1200px)
-                font-size wm(44)
+                font-size wm(40)
             +below(720px)
                 font-size wm(64)
 
@@ -80,21 +87,21 @@
         z-index 1
         +below(1200px)
             width 100%
+            padding 3% 5% 3% 5%
         +below(720px)
             padding-top 10%
-    &__text
-        transition transform .3s
        
     &__text
         font-family $ff-FuturaPT
         color $c-white
-        font-size w(20)
+        font-size w(15)
         font-weight 700
         line-height normal
         text-transform uppercase
         padding-left w(10)
+        transition transform .3s
         +below(1200px)
-            font-size wm(24)
+            font-size wm(20)
         +below(720px)
             font-size wm(30)
 
@@ -107,9 +114,9 @@
             width 100%
 
         +below(1200px)
-            width 90vw
-            left 5%
-            top wm(50px)
+            width 89vw
+            left 3%
+            top wm(40px)
         +below(720px)
             left 0
             width 100vw

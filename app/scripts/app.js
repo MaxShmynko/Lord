@@ -29,13 +29,6 @@ $(() => {
 	$(".test").on("click", ".test__item", function (e) {
 		$(".popup").addClass("is-active");
 		const id = $(e.target).closest(".test__item").data("id");
-		const isRightAnswer = questions[activeIndex].answers[id].isRightAnswer;
-		if (isRightAnswer) {
-			rightAnswers += 1;
-			$(".popup__chapter span").hide();
-		} else {
-			$(".popup__chapter span").show();
-		}
 	});
 
 	$(".popup__cross, .popup__button").on("click", function (e) {
