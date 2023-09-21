@@ -1,0 +1,23 @@
+mixin test()
+
+    +b('section').test()
+        +e.wrap
+            +e.counter Вопрос <span>1</span>
+            +e('p').title Сколько лет было Фёдору Конюхову на момент полёта?
+            +e('ul').list
+                +e('li').item(data-id='А')
+                    +e.sign
+                        span A.
+                        +e('p').text._1 60
+                +e('li').item(data-id='Б')
+                    +e.sign
+                        span Б.
+                        +e('p').text._2 64
+                +e('li').item(data-id='B')
+                    +e.sign
+                        span Б.
+                        +e('p').text._3 65
+
+        +e.bg 
+            img(src='./images/fon-questions.png')
+                
