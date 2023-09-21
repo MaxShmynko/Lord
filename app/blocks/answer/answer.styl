@@ -1,0 +1,80 @@
+.answer
+    position relative
+    background-color $c-blue
+    height 100vh
+
+
+    &__wrap
+        display flex
+        flex-direction column
+        justify-content space-between
+        height 100vh
+        align-items center
+        position relative
+        padding 5%
+        margin 0 auto
+        z-index 1
+        +below(1200px)
+            height wm(360)
+        +below(720px)
+            height wm(803)
+    
+    &__title
+        color $c-yellow
+        text-align center
+        font-family Bebas Neue
+        font-size w(44)
+        font-weight 700
+        text-transform uppercase
+        +below(1200px)
+            font-size wm(44)
+        +below(720px)
+            font-size wm(50)
+
+    &__text
+        color $c-white
+        font-family Futura PT
+        font-size w(20)
+        font-weight 700
+        line-height normal
+        text-transform uppercase
+        text-align center
+        +below(1200px)
+            font-size wm(20)
+        +below(720px)
+            font-size wm(27)
+
+    &__button
+        color $c-yellow
+        text-align center
+        font-family Bebas Neue
+        font-size w(16)
+        font-weight 700
+        text-decoration none
+        display block
+        background-color transparent
+        border none
+        +below(1200px)
+            font-size wm(16)
+        +below(720px)
+            font-size wm(30)
+
+    &__bg
+        position absolute
+        top w(40px)
+        left 15%
+        width 60vw
+        img
+            width 100%
+
+        +below(1400px)
+            width 80vw
+            left 10%
+        +below(1200px)
+            // width 80vw
+            // left 10%
+            top wm(27px)
+        +below(720px)
+            left 0
+            width 100vw
+            top wm(230px)

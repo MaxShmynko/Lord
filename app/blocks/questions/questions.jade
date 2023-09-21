@@ -8,15 +8,15 @@ mixin questions()
             +e('ol').variants
                 +e('li').answer
                     span A.
-                    +e.answer-text 60
+                    +e.answer-text(data-id='А')
                 +e('li').answer
                     span Б.
-                    +e.answer-text 64
+                    +e.answer-text(data-id='Б')
                 +e('li').answer
                     span В.
-                    +e.answer-text 65
+                    +e.answer-text(data-id='В')
 
-            +e.bg 
-                img(src='./images/fon-questions.png')
+        +e.bg 
+            img(src='./images/fon-questions.png')
 
 

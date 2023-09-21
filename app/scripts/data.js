@@ -1,4 +1,4 @@
-const DATA = {
+export const DATA = {
 	questions: [
 		{
 			title: "Сколько лет было Фёдору Конюхову на момент полёта?",
@@ -131,4 +131,4 @@ const DATA = {
 	],
 };
 
-export default DATA;
+// export default DATA;
