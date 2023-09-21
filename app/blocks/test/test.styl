@@ -109,21 +109,15 @@
         transition transform .3s
         +below(1200px)
             font-size wm(20)
-        +below(720px)
-            font-size wm(30)
 
     &__bg
-        position absolute
-        left 15%
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width 60vw
-        top 5%
         img
             width 100%
 
-        +below(1400px)
-            width 80vw
-            left 10%
         +below(720px)
-            left 0
             width 100vw
-            top 20%
