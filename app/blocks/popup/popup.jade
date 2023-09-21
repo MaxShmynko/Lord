@@ -1,0 +1,11 @@
+mixin popup()
+
+    +b('section').popup
+        +e.content
+            +e('P').chapter Правильный ответ:
+            +e('p').text На момент полёта, Фёдору Конюхову было 64 года.
+            +e.actions 
+                +e('button').button далее
+
+        +e.bg 
+            img(src='./images/fon-questions.png')

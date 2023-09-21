@@ -1,10 +1,14 @@
 extends /blocks/layout-default/layout-default
 include ../blocks/questions/questions
 include ../blocks/answer/answer
+include /blocks/test/test
+include /blocks/popup/popup
 
 block head
 	- var pageTitle = 'Повелитель ветра';
 
 block content
-	+questions
-	+answer
+	//- +questions
+	//- +answer
+	+test()
+	+popup()
