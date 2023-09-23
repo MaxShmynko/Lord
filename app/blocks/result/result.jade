@@ -1,0 +1,16 @@
+mixin result()
+    +b('section').result
+        +e.content
+            +e.chapter Результат:
+            +e.text Вы правильно ответили на 3 из 6 вопросов
+            +e.social-network
+                +e(href='#').network.vk
+                    img(src='./images/vk.svg')
+                +e(href='#').network.ok
+                    img(src='./images/ok.svg')
+                +e(href='#').network.te
+                    img(src='./images/te.svg')
+            +e('button').button пройти ещё раз
+
+        +e.bg 
+            img(src='./images/fon-questions.png')
